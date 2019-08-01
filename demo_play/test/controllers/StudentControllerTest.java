@@ -15,13 +15,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.concurrent.CompletionStage;
+import java.util.logging.Logger;
 
 import org.junit.Test;
 
 import models.Student;
 import play.test.TestServer;
-import play.libs.ws.WSClient;
-import play.libs.ws.WSResponse;
+import play.libs.ws.*;
 
 public class StudentControllerTest {
 	private static final String BASE_URL = "http://localhost:9000";
@@ -37,7 +37,7 @@ public class StudentControllerTest {
 				ws.close();
 				assertEquals(OK, response.getStatus());
 			} catch (Exception e) {
-				logger.error(e.getMessage(), e);
+				System.out.println(e.getMessage());
 			}
 		});
 	}

@@ -5,7 +5,7 @@
 # An example controller showing a sample home page
 GET     /                                    controllers.HomeController.index
 
-#GET     /hello/:name                         controllers.HomeController.hello(reuest:Request,name: String)
+GET     /hello/:name                         controllers.HomeController.hello(reuest:Request,name: String)
 
 GET     /map                                 controllers.JSONController.usingMap
 

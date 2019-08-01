@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/ADMIN/git/dzweb/demo_play/conf/routes
-// @DATE:Thu Aug 01 14:13:53 CEST 2019
+// @DATE:Thu Aug 01 14:51:57 CEST 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -125,6 +125,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def hello: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.hello",
+      """
+        function(name0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "hello/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("name", name0))})
         }
       """
     )

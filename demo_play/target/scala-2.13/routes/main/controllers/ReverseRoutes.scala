@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/ADMIN/git/dzweb/demo_play/conf/routes
-// @DATE:Thu Aug 01 14:13:53 CEST 2019
+// @DATE:Thu Aug 01 14:51:57 CEST 2019
 
 import play.api.mvc.Call
 
@@ -88,6 +88,12 @@ package controllers {
     def index(): Call = {
       
       Call("GET", _prefix)
+    }
+  
+    // @LINE:8
+    def hello(name:String): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "hello/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("name", name)))
     }
   
   }

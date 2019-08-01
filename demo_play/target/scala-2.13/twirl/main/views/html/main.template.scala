@@ -43,21 +43,21 @@ Seq[Any](format.raw/*7.32*/("""
 <head>
     <title>"""),_display_(/*13.13*/title),format.raw/*13.18*/("""</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href='"""),_display_(/*15.50*/routes/*15.56*/.Assets.versioned("stylesheets/main.css")),format.raw/*15.97*/("""'>
+    <link rel="stylesheet" media="screen" href='"""),_display_(/*15.50*/routes/*15.56*/.Assets.versioned("css/main.css")),format.raw/*15.89*/("""'>
     <link rel="shortcut icon" type="image/png" href='"""),_display_(/*16.55*/routes/*16.61*/.Assets.versioned("images/favicon.png")),format.raw/*16.100*/("""'>
 	"""),format.raw/*17.21*/("""
-	"""),format.raw/*18.2*/("""<link rel="stylesheet" href=""""),_display_(/*18.32*/routes/*18.38*/.Assets.versioned("bower_components/bootstrap/dist/css/bootstrap.min.css")),format.raw/*18.112*/("""">
+	"""),format.raw/*18.2*/("""<link rel="stylesheet" href=""""),_display_(/*18.32*/routes/*18.38*/.Assets.versioned("css/bootstrap.min.css")),format.raw/*18.80*/("""">
 
 </head>
 
 <body>
     """),_display_(/*23.6*/content),format.raw/*23.13*/("""
     
-    """),format.raw/*25.30*/("""
-	"""),format.raw/*26.55*/("""
-	"""),format.raw/*27.2*/("""<script src=""""),_display_(/*27.16*/routes/*27.22*/.Assets.versioned("bower_components/jquery/dist/jquery.slim.min.js")),format.raw/*27.90*/(""""></script>
-	<script src=""""),_display_(/*28.16*/routes/*28.22*/.Assets.versioned("bower_components/popper/popper.min.js")),format.raw/*28.80*/(""""></script>
-	<script src=""""),_display_(/*29.16*/routes/*29.22*/.Assets.versioned("bower_components/bootstrap/dist/js/bootstrap.min.js")),format.raw/*29.94*/(""""></script>
+    """),format.raw/*25.5*/("""<script src=""""),_display_(/*25.19*/routes/*25.25*/.Assets.versioned("js/main.js")),format.raw/*25.56*/(""""></script>
+    """),format.raw/*26.30*/("""
+	"""),format.raw/*27.55*/("""
+	"""),format.raw/*28.2*/("""<script src=""""),_display_(/*28.16*/routes/*28.22*/.Assets.versioned("js/jquery.slim.min.js")),format.raw/*28.64*/(""""></script>
+	<script src=""""),_display_(/*29.16*/routes/*29.22*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*29.62*/(""""></script>
     
 </body>
 
@@ -77,11 +77,11 @@ Seq[Any](format.raw/*7.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-01T14:45:48.919
+                  DATE: 2019-08-01T15:20:43.319
                   SOURCE: C:/Users/ADMIN/git/dzweb/demo_play/app/views/main.scala.html
-                  HASH: 0e27bc057234f4cb6f88da17c27d9fee997555b8
-                  MATRIX: 1211->266|1336->296|1366->300|1450->357|1476->362|1638->497|1653->503|1715->544|1800->602|1815->608|1876->647|1909->671|1939->674|1996->704|2011->710|2107->784|2163->814|2191->821|2231->858|2262->914|2292->917|2333->931|2348->937|2437->1005|2492->1033|2507->1039|2586->1097|2641->1125|2656->1131|2749->1203
-                  LINES: 33->7|38->7|40->9|44->13|44->13|46->15|46->15|46->15|47->16|47->16|47->16|48->17|49->18|49->18|49->18|49->18|54->23|54->23|56->25|57->26|58->27|58->27|58->27|58->27|59->28|59->28|59->28|60->29|60->29|60->29
+                  HASH: dd900dcbc7e051c0b9a3f63f005f5aea09b4d22d
+                  MATRIX: 1211->266|1336->296|1366->300|1450->357|1476->362|1638->497|1653->503|1707->536|1792->594|1807->600|1868->639|1901->663|1931->666|1988->696|2003->702|2066->744|2122->774|2150->781|2189->793|2230->807|2245->813|2297->844|2342->886|2373->942|2403->945|2444->959|2459->965|2522->1007|2577->1035|2592->1041|2653->1081
+                  LINES: 33->7|38->7|40->9|44->13|44->13|46->15|46->15|46->15|47->16|47->16|47->16|48->17|49->18|49->18|49->18|49->18|54->23|54->23|56->25|56->25|56->25|56->25|57->26|58->27|59->28|59->28|59->28|59->28|60->29|60->29|60->29
                   -- GENERATED --
               */
           

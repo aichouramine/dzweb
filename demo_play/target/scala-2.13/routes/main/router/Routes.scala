@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/ADMIN/git/dzweb/demo_play/conf/routes
-// @DATE:Thu Aug 01 14:13:53 CEST 2019
+// @DATE:Thu Aug 01 14:51:57 CEST 2019
 
 package router
 
@@ -49,6 +49,7 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """hello/""" + "$" + """name<[^/]+>""", """controllers.HomeController.hello(reuest:Request, name:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """map""", """controllers.JSONController.usingMap"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """catch""", """controllers.JSONController.catchObj(request:Request)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """return""", """controllers.JSONController.returnObj"""),
@@ -83,11 +84,31 @@ class Routes(
     )
   )
 
+  // @LINE:8
+  private[this] lazy val controllers_HomeController_hello1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("hello/"), DynamicPart("name", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_hello1_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      HomeController_3.hello(fakeValue[play.mvc.Http.Request], fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "hello",
+      Seq(classOf[play.mvc.Http.Request], classOf[String]),
+      "GET",
+      this.prefix + """hello/""" + "$" + """name<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
   // @LINE:10
-  private[this] lazy val controllers_JSONController_usingMap1_route = Route("GET",
+  private[this] lazy val controllers_JSONController_usingMap2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("map")))
   )
-  private[this] lazy val controllers_JSONController_usingMap1_invoker = createInvoker(
+  private[this] lazy val controllers_JSONController_usingMap2_invoker = createInvoker(
     JSONController_0.usingMap,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -102,10 +123,10 @@ class Routes(
   )
 
   // @LINE:12
-  private[this] lazy val controllers_JSONController_catchObj2_route = Route("POST",
+  private[this] lazy val controllers_JSONController_catchObj3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("catch")))
   )
-  private[this] lazy val controllers_JSONController_catchObj2_invoker = createInvoker(
+  private[this] lazy val controllers_JSONController_catchObj3_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       JSONController_0.catchObj(fakeValue[play.mvc.Http.Request]),
@@ -122,10 +143,10 @@ class Routes(
   )
 
   // @LINE:13
-  private[this] lazy val controllers_JSONController_returnObj3_route = Route("GET",
+  private[this] lazy val controllers_JSONController_returnObj4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("return")))
   )
-  private[this] lazy val controllers_JSONController_returnObj3_invoker = createInvoker(
+  private[this] lazy val controllers_JSONController_returnObj4_invoker = createInvoker(
     JSONController_0.returnObj,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -140,10 +161,10 @@ class Routes(
   )
 
   // @LINE:17
-  private[this] lazy val controllers_StudentController_listStudents4_route = Route("GET",
+  private[this] lazy val controllers_StudentController_listStudents5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pathStudents")))
   )
-  private[this] lazy val controllers_StudentController_listStudents4_invoker = createInvoker(
+  private[this] lazy val controllers_StudentController_listStudents5_invoker = createInvoker(
     StudentController_1.listStudents(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -158,10 +179,10 @@ class Routes(
   )
 
   // @LINE:18
-  private[this] lazy val controllers_StudentController_retrieve5_route = Route("POST",
+  private[this] lazy val controllers_StudentController_retrieve6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pathStudents/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_StudentController_retrieve5_invoker = createInvoker(
+  private[this] lazy val controllers_StudentController_retrieve6_invoker = createInvoker(
     StudentController_1.retrieve(fakeValue[Int]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -176,10 +197,10 @@ class Routes(
   )
 
   // @LINE:19
-  private[this] lazy val controllers_StudentController_create6_route = Route("POST",
+  private[this] lazy val controllers_StudentController_create7_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pathStudents")))
   )
-  private[this] lazy val controllers_StudentController_create6_invoker = createInvoker(
+  private[this] lazy val controllers_StudentController_create7_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       StudentController_1.create(fakeValue[play.mvc.Http.Request]),
@@ -196,10 +217,10 @@ class Routes(
   )
 
   // @LINE:20
-  private[this] lazy val controllers_StudentController_update7_route = Route("PUT",
+  private[this] lazy val controllers_StudentController_update8_route = Route("PUT",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pathStudents")))
   )
-  private[this] lazy val controllers_StudentController_update7_invoker = createInvoker(
+  private[this] lazy val controllers_StudentController_update8_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       StudentController_1.update(fakeValue[play.mvc.Http.Request]),
@@ -216,10 +237,10 @@ class Routes(
   )
 
   // @LINE:21
-  private[this] lazy val controllers_StudentController_delete8_route = Route("DELETE",
+  private[this] lazy val controllers_StudentController_delete9_route = Route("DELETE",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pathStudents/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_StudentController_delete8_invoker = createInvoker(
+  private[this] lazy val controllers_StudentController_delete9_invoker = createInvoker(
     StudentController_1.delete(fakeValue[Int]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -234,10 +255,10 @@ class Routes(
   )
 
   // @LINE:26
-  private[this] lazy val controllers_Assets_versioned9_route = Route("GET",
+  private[this] lazy val controllers_Assets_versioned10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned9_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned10_invoker = createInvoker(
     Assets_2.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -260,61 +281,68 @@ class Routes(
         controllers_HomeController_index0_invoker.call(HomeController_3.index)
       }
   
+    // @LINE:8
+    case controllers_HomeController_hello1_route(params@_) =>
+      call(params.fromPath[String]("name", None)) { (name) =>
+        controllers_HomeController_hello1_invoker.call(
+          req => HomeController_3.hello(req, name))
+      }
+  
     // @LINE:10
-    case controllers_JSONController_usingMap1_route(params@_) =>
+    case controllers_JSONController_usingMap2_route(params@_) =>
       call { 
-        controllers_JSONController_usingMap1_invoker.call(JSONController_0.usingMap)
+        controllers_JSONController_usingMap2_invoker.call(JSONController_0.usingMap)
       }
   
     // @LINE:12
-    case controllers_JSONController_catchObj2_route(params@_) =>
+    case controllers_JSONController_catchObj3_route(params@_) =>
       call { 
-        controllers_JSONController_catchObj2_invoker.call(
+        controllers_JSONController_catchObj3_invoker.call(
           req => JSONController_0.catchObj(req))
       }
   
     // @LINE:13
-    case controllers_JSONController_returnObj3_route(params@_) =>
+    case controllers_JSONController_returnObj4_route(params@_) =>
       call { 
-        controllers_JSONController_returnObj3_invoker.call(JSONController_0.returnObj)
+        controllers_JSONController_returnObj4_invoker.call(JSONController_0.returnObj)
       }
   
     // @LINE:17
-    case controllers_StudentController_listStudents4_route(params@_) =>
+    case controllers_StudentController_listStudents5_route(params@_) =>
       call { 
-        controllers_StudentController_listStudents4_invoker.call(StudentController_1.listStudents())
+        controllers_StudentController_listStudents5_invoker.call(StudentController_1.listStudents())
       }
   
     // @LINE:18
-    case controllers_StudentController_retrieve5_route(params@_) =>
+    case controllers_StudentController_retrieve6_route(params@_) =>
       call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_StudentController_retrieve5_invoker.call(StudentController_1.retrieve(id))
+        controllers_StudentController_retrieve6_invoker.call(StudentController_1.retrieve(id))
       }
   
     // @LINE:19
-    case controllers_StudentController_create6_route(params@_) =>
+    case controllers_StudentController_create7_route(params@_) =>
       call { 
-        controllers_StudentController_create6_invoker.call(
+        controllers_StudentController_create7_invoker.call(
           req => StudentController_1.create(req))
       }
   
     // @LINE:20
-    case controllers_StudentController_update7_route(params@_) =>
+    case controllers_StudentController_update8_route(params@_) =>
       call { 
-        controllers_StudentController_update7_invoker.call(
+        controllers_StudentController_update8_invoker.call(
           req => StudentController_1.update(req))
       }
   
     // @LINE:21
-    case controllers_StudentController_delete8_route(params@_) =>
+    case controllers_StudentController_delete9_route(params@_) =>
       call(params.fromPath[Int]("id", None)) { (id) =>
-        controllers_StudentController_delete8_invoker.call(StudentController_1.delete(id))
+        controllers_StudentController_delete9_invoker.call(StudentController_1.delete(id))
       }
   
     // @LINE:26
-    case controllers_Assets_versioned9_route(params@_) =>
+    case controllers_Assets_versioned10_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned9_invoker.call(Assets_2.versioned(path, file))
+        controllers_Assets_versioned10_invoker.call(Assets_2.versioned(path, file))
       }
   }
 }
