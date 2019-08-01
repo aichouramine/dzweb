@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\app\views\hello.scala.html:1:1: value Context is not a member of object play.mvc.Http[0m
+[0m[[0m[31merror[0m] [0m[0m@(name: String)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\app\views\main.scala.html:1:1: value Context is not a member of object play.mvc.Http[0m
+[0m[[0m[31merror[0m] [0m[0m@*[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\app\views\index.scala.html:1:1: value Context is not a member of object play.mvc.Http[0m
+[0m[[0m[31merror[0m] [0m[0m@()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
