@@ -1,7 +1,9 @@
 package controllers;
 
 import play.mvc.Controller;
+import play.mvc.Http.Request;
 import play.mvc.Result;
+import views.html.*;
 
 /**
  * This controller contains an action to handle HTTP requests to the
@@ -19,7 +21,9 @@ public class HomeController extends Controller {
 		return ok(views.html.index.render());
 	}
 
-	public Result hello(String name) {
+	public Result hello(Request request, String name) {
+		String remoteAddress =request.remoteAddress();
+        System.out.println("RemoteAddress: "+remoteAddress);
 		return ok(views.html.hello.render(name));
 	}
 

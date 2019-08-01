@@ -20,8 +20,6 @@ libraryDependencies ++= Seq(
 
 libraryDependencies+="io.jsonwebtoken" % "jjwt-api" % "0.10.7"
 
-// https://mvnrepository.com/artifact/com.typesafe.play/play-ws
-libraryDependencies += "com.typesafe.play" %% "play-ws" % "2.8.0-M3"
 
 // https://mvnrepository.com/artifact/com.typesafe.play/play-json
 libraryDependencies += "com.typesafe.play" %% "play-json" % "2.7.4"
@@ -29,3 +27,5 @@ libraryDependencies += "com.typesafe.play" %% "play-json" % "2.7.4"
 // https://mvnrepository.com/artifact/com.typesafe.play/play-ebean
 libraryDependencies += "com.typesafe.play" %% "play-ebean" % "5.0.2"
 
+// https://mvnrepository.com/artifact/com.typesafe.play/play-ws-standalone
+libraryDependencies += "com.typesafe.play" %% "play-ws-standalone" % "2.0.7"
