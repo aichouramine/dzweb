@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/ADMIN/Documents/NetBeansProjects/PLAY_PROJECTS/demo_play/conf/routes
-// @DATE:Wed Jul 31 17:13:24 CEST 2019
+// @SOURCE:C:/Users/ADMIN/git/dzweb/demo_play/conf/routes
+// @DATE:Thu Aug 01 14:13:53 CEST 2019
 
 import play.api.mvc.Call
 
@@ -88,12 +88,6 @@ package controllers {
     def index(): Call = {
       
       Call("GET", _prefix)
-    }
-  
-    // @LINE:8
-    def hello(name:String): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "hello" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[String]].unbind("name", name)))))
     }
   
   }

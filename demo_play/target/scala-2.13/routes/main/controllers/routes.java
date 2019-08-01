@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/ADMIN/Documents/NetBeansProjects/PLAY_PROJECTS/demo_play/conf/routes
-// @DATE:Wed Jul 31 17:13:24 CEST 2019
+// @SOURCE:C:/Users/ADMIN/git/dzweb/demo_play/conf/routes
+// @DATE:Thu Aug 01 14:13:53 CEST 2019
 
 package controllers;
 

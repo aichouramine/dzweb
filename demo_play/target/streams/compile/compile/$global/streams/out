@@ -1,10 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\app\views\hello.scala.html:1:1: value Context is not a member of object play.mvc.Http[0m
-[0m[[0m[31merror[0m] [0m[0m@(name: String)[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\app\views\main.scala.html:1:1: value Context is not a member of object play.mvc.Http[0m
-[0m[[0m[31merror[0m] [0m[0m@*[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\app\views\index.scala.html:1:1: value Context is not a member of object play.mvc.Http[0m
-[0m[[0m[31merror[0m] [0m[0m@()[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\ADMIN\git\dzweb\demo_play\app\controllers\HomeController.java:27:1: method render in class views.html.index cannot be applied to given types;[0m
+[0m[[0m[31merror[0m] [0m[0m  required: no arguments[0m
+[0m[[0m[31merror[0m] [0m[0m  found: java.lang.String[0m
+[0m[[0m[31merror[0m] [0m[0m  reason: actual and formal argument lists differ in length[0m
+[0m[[0m[31merror[0m] [0m[0m		return ok(views.html.index.render(name));[0m

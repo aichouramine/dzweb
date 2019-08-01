@@ -1,4 +1,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\conf\application.conf,C:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\target\scala-2.13\classes\application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\conf\logback.xml,C:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\target\scala-2.13\classes\logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\conf\routes,C:\Users\ADMIN\Documents\NetBeansProjects\PLAY_PROJECTS\demo_play\target\scala-2.13\classes\routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\git\dzweb\demo_play\conf\application.conf,C:\Users\ADMIN\git\dzweb\demo_play\target\scala-2.13\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\git\dzweb\demo_play\conf\evolutions,C:\Users\ADMIN\git\dzweb\demo_play\target\scala-2.13\classes\evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\git\dzweb\demo_play\conf\evolutions\default,C:\Users\ADMIN\git\dzweb\demo_play\target\scala-2.13\classes\evolutions\default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\git\dzweb\demo_play\conf\evolutions\default\1.sql,C:\Users\ADMIN\git\dzweb\demo_play\target\scala-2.13\classes\evolutions\default\1.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\git\dzweb\demo_play\conf\logback.xml,C:\Users\ADMIN\git\dzweb\demo_play\target\scala-2.13\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\ADMIN\git\dzweb\demo_play\conf\routes,C:\Users\ADMIN\git\dzweb\demo_play\target\scala-2.13\classes\routes)[0m

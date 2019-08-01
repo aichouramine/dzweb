@@ -3,20 +3,24 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
+GET     /                                    controllers.HomeController.index
 
-GET     /hello                         controllers.HomeController.hello(name: String)
+#GET     /hello/:name                         controllers.HomeController.hello(reuest:Request,name: String)
 
-GET     /map                           controllers.JSONController.usingMap
+GET     /map                                 controllers.JSONController.usingMap
 
-POST    /catch                          controllers.JSONController.catchObj(request: Request)
-GET     /return                       controllers.JSONController.returnObj
+POST    /catch                               controllers.JSONController.catchObj(request: Request)
+GET     /return                              controllers.JSONController.returnObj
 
 
 # Student REST API
-
+GET     /pathStudents                        controllers.StudentController.listStudents()
+POST    /pathStudents/:id                    controllers.StudentController.retrieve(id:Int)
+POST    /pathStudents                        controllers.StudentController.create(request: Request)
+PUT     /pathStudents                        controllers.StudentController.update(request: Request)
+DELETE  /pathStudents/:id                    controllers.StudentController.delete(id:Int)
 
 #Fin Student REST API
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /assets/*file                        controllers.Assets.versioned(path="/public", file: Asset)

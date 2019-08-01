@@ -4,7 +4,7 @@
 		module="demo_play_2.13"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190801111559"
+		publication="20190801143839"
 	>
 		<description>
 		demo_play
@@ -58,7 +58,7 @@
 		<dependency org="com.typesafe.play" name="play-java-jdbc_2.13" rev="2.7.3" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.18" conf="compile->default(compile)"/>
 		<dependency org="io.jsonwebtoken" name="jjwt-api" rev="0.10.7" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-ws_2.13" rev="2.8.0-M3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-json_2.13" rev="2.7.4" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ws-standalone_2.13" rev="2.0.7" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
